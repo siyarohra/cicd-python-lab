@@ -1,0 +1,11 @@
+from flask import Flask
+application = Flask(__name__)
+@application.route('/')
+def hello_world():
+return "<h1>CI/CD Pipeline is Live!</h1><p>Version 1.0: Initial Deployment.</p>"
+if __name__ == '__main__':
+application.run(debug=True)
+7. 8. Commit the new file to the main branch.
+Create another file named requirements.txt and add the following line:
+Flask==3.0.0
+9. Commit this file to the main branch as well.
